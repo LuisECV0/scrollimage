@@ -1,5 +1,14 @@
-/* Estilos para la galería de imágenes con carrusel */
-.gallery {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(60, 71, 132);
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gallery {
     width: 80%;
     margin: 50px auto;
     display: flex;
@@ -10,13 +19,16 @@
   
   .slider {
     width: 100%;
+    border: 2px solid lavenderblush;
+    border-radius: 20px;
+    padding: 5px;
   }
   
   .slider img {
     max-width: 100%;
-    max-height: 400px;
+    height: 400px; /* Ajusta la altura según tus preferencias */
     object-fit: contain;
-    border-radius: 5px;
+    border-radius: 15px;
     display: block;
     margin: 0 auto;
   }
@@ -56,10 +68,16 @@
   }
   
   .slick-prev:before {
+    border-radius: 10px;
+    border: 2px solid rgb(242, 234, 234);
+    color: aliceblue;
     content: '←';
   }
   
   .slick-next:before {
+    border: 2px solid rgb(242, 239, 239);
+    color: aliceblue;
+    border-radius: 10px;
     content: '→';
   }
   
